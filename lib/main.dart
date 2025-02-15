@@ -101,8 +101,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Text(
                           currentQuote!.text,
+                          textAlign: TextAlign.center, // Align text to center
                           style: TextStyle(
-                              fontSize: 20, fontStyle: FontStyle.italic),
+                            fontSize: 20,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.blue,
+                          ),
                         ),
                         SizedBox(height: 8),
                         Text(
