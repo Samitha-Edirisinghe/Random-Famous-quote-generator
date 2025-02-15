@@ -102,12 +102,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text(
                           currentQuote!.text,
                           style: TextStyle(
-                              fontSize: 18, fontStyle: FontStyle.italic),
+                              fontSize: 20, fontStyle: FontStyle.italic),
                         ),
                         SizedBox(height: 8),
                         Text(
                           '- ${currentQuote!.author}',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
                         ),
                       ],
                     ),
@@ -119,7 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 padding: EdgeInsets.all(16.0),
                 child: Text('No quotes available for this category.'),
               ),
-            SizedBox(height: 20),
+            SizedBox(height: 50),
             ElevatedButton(
               onPressed: _getRandomQuote,
               child: Text('New Quote'),

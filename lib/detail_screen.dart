@@ -22,7 +22,7 @@ class DetailScreen extends StatelessWidget {
               padding: EdgeInsets.all(16.0),
               child: Text(
                 quote.details,
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 20),
               ),
             ),
           ],
