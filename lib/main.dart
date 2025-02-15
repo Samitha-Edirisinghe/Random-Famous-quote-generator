@@ -18,6 +18,11 @@ class MyApp extends StatelessWidget {
       title: 'Famous Quotes',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.grey[200], // Background color
+        textTheme: TextTheme(
+          bodyMedium: TextStyle(
+              fontSize: 18, color: Colors.black), // Font size & text color
+        ),
       ),
       home: HomeScreen(),
     );
@@ -127,6 +132,17 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 50),
             ElevatedButton(
               onPressed: _getRandomQuote,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(
+                    255, 8, 8, 8), // Button background color
+                foregroundColor: Colors.white, // Text color
+                padding: EdgeInsets.symmetric(
+                    horizontal: 20, vertical: 12), // Adjust padding if needed
+                textStyle: TextStyle(
+                  fontSize: 18, // Font size
+                  fontWeight: FontWeight.bold, // Optional: Make text bold
+                ),
+              ),
               child: Text('New Quote'),
             ),
           ],
