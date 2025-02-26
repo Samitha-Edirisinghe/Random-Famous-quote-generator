@@ -8,7 +8,7 @@ import 'quotes.dart';
 class DetailScreen extends StatelessWidget {
   final Quote quote;
 
-  DetailScreen({required this.quote});
+  const DetailScreen({super.key, required this.quote});
 
   @override
   Widget build(BuildContext context) {
